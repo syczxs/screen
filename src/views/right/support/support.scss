@@ -1,0 +1,35 @@
+.support-content {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2.7vh;
+        > li {
+            flex-basis: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 2.2vh;
+            img {
+                width: 0.4rem;
+                height: 0.44rem;
+                margin-bottom: 0.65vh;
+            }
+            .number {
+                font-size: 0.16rem;
+                font-family: Aldrich;
+                font-weight: 400;
+                color: #1affff;
+                opacity: 1;
+                margin: 0.04vh 0;
+            }
+            .title {
+                font-size: 0.14rem;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #ffffff;
+                opacity: 1;
+            }
+        }
+    }
+}

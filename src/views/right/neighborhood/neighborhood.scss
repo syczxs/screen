@@ -1,0 +1,105 @@
+.neighborhood-header {
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+        box-sizing: border-box;
+        > li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.2vh;
+            .title {
+                width: 0.4rem;
+                height: 0.4rem;
+                background: rgba(#00b9fe, 0.06);
+                border-radius: 0px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                > span {
+                    font-size: 0.12rem;
+                    font-family: PingFang SC;
+                    font-weight: bold;
+                    color: #00f3fe;
+                    opacity: 1;
+                    width: 0.24rem;
+                }
+                > div {
+                    width: 3px;
+                    height: 3px;
+                    position: absolute;
+                    box-sizing: border-box;
+                }
+                .lt {
+                    border-top: 1px solid #00d2e7;
+                    border-left: 1px solid #00d2e7;
+                    left: 0px;
+                    top: 0px;
+                }
+                .rt {
+                    border-top: 1px solid #00d2e7;
+                    border-right: 1px solid #00d2e7;
+                    right: 0px;
+                    top: 0px;
+                }
+                .rb {
+                    border-bottom: 1px solid #00d2e7;
+                    border-right: 1px solid #00d2e7;
+                    right: 0px;
+                    bottom: 0px;
+                }
+                .lb {
+                    border-bottom: 1px solid #00d2e7;
+                    border-left: 1px solid #00d2e7;
+                    left: 0px;
+                    bottom: 0px;
+                }
+            }
+            .right {
+                flex: 1;
+                padding-left: 0.24rem;
+                .header {
+                    display: flex;
+                    align-items: center;
+                    .header-title {
+                        font-size: 0.12rem;
+                        font-family: PingFang SC;
+                        font-weight: 400;
+                        color: #ffffff;
+                        opacity: 1;
+                        margin-right: 0.08rem;
+                    }
+                    .header-number {
+                        font-size: 0.18rem;
+                        font-family: Aldrich;
+                        font-weight: 400;
+
+                        color: #00ede6;
+                        opacity: 1;
+                    }
+                }
+                .line {
+                    width: 100%;
+                    height: 0.04rem;
+                    background: rgba(0, 185, 254, 0.1);
+                    opacity: 1;
+                    border-radius: 0px;
+                }
+                .footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    > span {
+                        font-size: 0.12rem;
+                        font-family: PingFang SC;
+                        font-weight: 400;
+                        color: #ffffff;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

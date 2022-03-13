@@ -1,0 +1,100 @@
+$blue: #00ede5;
+$color: #333;
+.tabs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .tabs-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: $color;
+        position: relative;
+        .pic-box {
+            display: flex;
+            height: 6vh;
+            justify-content: center;
+            align-items: flex-end;
+            img {
+                width: 0.24rem;
+                height: 0.24rem;
+                margin: 1vh 0.55rem;
+            }
+        }
+    }
+
+    .indicator-box {
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+        opacity: 0.6;
+        border-radius: 0px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .indicator {
+            width: calc(50% - 0.6rem);
+            // position: absolute;
+            height: 2px;
+            left: 0;
+            top: 0px;
+            transition: all 250ms;
+        }
+        .indicator.selected {
+            background-color: $blue;
+        }
+    }
+    & .item-box {
+        width: 100%;
+        display: flex;
+    }
+
+    &-item {
+        flex: 1;
+        cursor: pointer;
+        padding: 0.13rem 0.6rem 0 0.6rem;
+        font-size: 0.16rem;
+        font-family: PingFang SC;
+        font-weight: bold;
+        color: #ffffff;
+        opacity: 0.6;
+        position: relative;
+        &:first-child {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &.selected {
+            color: $blue;
+        }
+
+        &::after {
+            content: "";
+            width: 0.12rem;
+            height: 0.12rem;
+            background: #a6a9ad;
+            border-radius: 50%;
+            opacity: 1;
+            top: -0.06rem;
+            position: absolute;
+        }
+        &.selected::after {
+            background: $blue;
+        }
+    }
+
+    &-content {
+        flex: 1;
+
+        // > div {
+        //   width: 100%;
+        //   height: 100%;
+        // }
+        // &-item {
+        //   display: none;
+        //   &.selected {
+        //     display: block;
+        //   }
+        // }
+    }
+}

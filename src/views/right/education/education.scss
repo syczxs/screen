@@ -1,0 +1,40 @@
+.education-content {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 3.8vh;
+        > li {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 3.7vh;
+            img {
+                width: 0.8rem;
+                height: 0.8rem;
+            }
+            > div {
+                .number {
+                    display: block;
+                    font-size: 0.26rem;
+                    font-family: Aldrich;
+                    font-weight: 400;
+                    color: #1fecf6;
+                    opacity: 1;
+                }
+                .title {
+                    font-size: 0.18rem;
+                    font-family: PingFang SC;
+                    font-weight: 400;
+                    color: #ffffff;
+                    opacity: 1;
+                    display: block;
+                    margin-bottom: 0.08rem;
+                }
+                .yellow {
+                    color: #ffcb01;
+                }
+            }
+        }
+    }
+}

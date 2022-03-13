@@ -1,0 +1,46 @@
+.padding-box {
+    padding: 0 0 0 0.4rem;
+}
+.basic-header {
+    width: 100%;
+    margin-top: 3vh;
+    & > ul {
+        display: flex;
+        justify-content: space-between;
+        > li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 0.4rem;
+                height: 4vh;
+                margin-bottom: 0.64vh;
+            }
+            .number {
+                font-size: 0.16rem;
+                font-family: Aldrich;
+                font-weight: 400;
+                color: #1affff;
+                opacity: 1;
+                margin-bottom: 0.037vh;
+            }
+            .title {
+                font-size: 0.14rem;
+                font-family: PingFang SC;
+                font-weight: 400;
+                color: #ffffff;
+                opacity: 1;
+            }
+        }
+    }
+}
+.chart-box {
+    width: 100%;
+    height: 12vh;
+    margin-top: 2.3vh;
+    .e-charts {
+        width: 100%;
+        height: 100%;
+    }
+}
